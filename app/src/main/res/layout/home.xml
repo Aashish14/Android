@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        tools:context=".home"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight=".7">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/home2"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight=".5"
+        android:background="@color/accent_material_light">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView4"
+            android:src="@drawable/ttt"
+            android:scaleType="centerCrop" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="LOGIN"
+
+            android:drawableLeft="@drawable/icon2"
+
+            android:id="@+id/btlogin"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="25dp"
+            android:background="@android:color/holo_orange_dark"
+            android:textSize="25dp"
+            android:onClick="onClick1"
+            android:typeface="serif"
+            style="@android:style/ButtonBar"
+            android:backgroundTint="#ffffff"
+            android:backgroundTintMode="multiply"
+            android:focusable="false"
+            android:lines="@integer/google_play_services_version"
+            android:outlineProvider="bounds"
+            android:singleLine="true"
+            android:textColor="#0a0a0a" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="NEWS FEED"
+            android:drawableLeft="@drawable/news"
+            android:id="@+id/btnews"
+            android:layout_centerVertical="true"
+            android:layout_alignEnd="@+id/btlogin"
+            android:layout_alignStart="@+id/btlogin"
+            android:textSize="25dp"
+            android:onClick="onClick2"
+            android:background="@android:color/holo_orange_light"
+            android:typeface="serif"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="40dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="ABOUT US"
+            android:drawableLeft="@drawable/phone"
+            android:id="@+id/btabout"
+            android:textSize="25dp"
+            android:onClick="onClick3"
+            android:background="@android:color/holo_purple"
+            android:typeface="serif"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/btnews"
+            android:layout_alignEnd="@+id/btnews"
+            android:layout_marginBottom="30dp" />
+
+    </RelativeLayout>
+</LinearLayout>

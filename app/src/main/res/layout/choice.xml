@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        tools:context=".choice"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".5">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView6"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/owner"
+            android:scaleType="centerCrop" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="OWNER"
+            android:id="@+id/btowner"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="#9a181515"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="60dp"
+            android:onClick="owner" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/asd"
+            android:layout_marginStart="220dp"
+            android:id="@+id/etusername"
+            android:layout_alignParentTop="true"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="5dp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".5">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView7"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/tenant"
+            android:scaleType="centerCrop" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="TENANT"
+            android:id="@+id/bttenant"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/holo_orange_dark"
+            android:background="#90211e1e"
+            android:textSize="60dp"
+            android:onClick="tenant" />
+
+    </RelativeLayout>
+
+</LinearLayout>
